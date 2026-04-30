@@ -3,7 +3,7 @@ name: "Estrutura de diretórios e arquivos"
 on:
   push:
     branches: [main]
-  worklflow_dispatch:
+  workflow_dispatch:
 
 env:
   NODE_VERSION: '18'
@@ -38,7 +38,7 @@ jobs:
       - name: Variáveis e Contexto
         run: |
           echo " == VARIÁVEIS E CONTEXTOS == "
-          echo " Variáveis env: { env.NODE_VERSION } "
+          echo " Variáveis env: {{ env.NODE_VERSION }} "
           echo " 1. name: Nome do workflow "
           echo " 2. contextos: Acesso a informações do workflow, job, runner, etc. "
           echo ""
