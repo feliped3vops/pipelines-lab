@@ -19,7 +19,7 @@ jobs:
 
       - name: Mostrar estrutura .github/workflows
         run: |
-          echo " == ESTRUTRA DE DIRETÓRIOS E ARQUIVOS" .github/workflows == "
+          echo " == ESTRUTRA DE DIRETÓRIOS E ARQUIVOS .github/workflows == "
           ls -la .github/workflows
           echo ""
           echo " Total de workflows: $(ls -1 .github/workflows | wc -l) "
