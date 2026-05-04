@@ -20,7 +20,7 @@ jobs:
       - name: Configurar credenciais da API
         env:
           API_KEY: ${{ secrets.API_KEY }}
-          API_URL: ${{ secrest.API_URL }}
+          API_URL: ${{ secrets.API_URL }}
         run: |
           echo "Configurando conexão com API externa..."
           echo "URL da API: $API_URL"
